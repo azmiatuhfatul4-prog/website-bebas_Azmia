@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tentang Kami — SweetBakery</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">
+        <a href="index.html"><img src="image/Logo.jpeg" alt="SweetBakery Logo" class="logo-img"> SweetBakery</a>
+      </h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Tentang</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="about">
+      <h2>Tentang SweetBakery</h2>
+      <p>SweetBakery berdiri sejak 2025 dengan visi menghadirkan roti dan kue terbaik untuk keluarga Indonesia. Kami percaya kebahagiaan bisa hadir dari sepotong roti hangat.</p>
+
+      <h3>Visi</h3>
+      <p>Menyajikan roti dan kue yang lezat, sehat, dan ramah lingkungan.</p>
+
+      <h3>Misi</h3>
+      <ul>
+        <li>Menggunakan bahan alami dan berkualitas.</li>
+        <li>Memberikan pelayanan ramah dan cepat.</li>
+        <li>Menghadirkan produk baru yang inovatif.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 SweetBakery.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+<style>
+{box-sizing:border-box}
+:root{
+  --accent:#e07a5f;
+  --bg:#fffaf6;
+  --text:#3d2c2e;
+}
+body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{background:white;box-shadow:0 1px 4px rgba(15,23,42,0.06)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem}
+.logo a{text-decoration:none;color:var(--accent);font-weight:700;font-size:1.2rem;display:flex;align-items:center;gap:0.5rem}
+.logo-img{height:40px;width:auto}
+.nav a{margin-left:1rem;text-decoration:none;color:var(--text)}
+.main{padding:2rem 1rem}
+.hero{background:white;padding:2rem;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04);text-align:center}
+.hero h2{margin:0 0 0.5rem}
+.btn{display:inline-block;margin-top:1rem;padding:0.6rem 1rem;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
+.intro-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+.card{background:white;padding:1rem;border-radius:10px}
+.project-list{display:grid;gap:1rem}
+.project{background:white;padding:1rem;border-radius:10px;text-align:center}
+.menu-img{width:100%;max-width:200px;border-radius:8px;margin-bottom:0.5rem}
+.site-footer{margin-top:2rem;padding:1rem 0;text-align:center;color:#8c6e63}
+
+@media (min-width:900px){
+  .nav a{margin-left:1.5rem}
+  .hero{padding:3rem}
+  .project-list{grid-template-columns:repeat(3,1fr)}
+}
